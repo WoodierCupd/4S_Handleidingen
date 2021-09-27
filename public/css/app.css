@@ -158,6 +158,7 @@ a {
   color: #3490dc;
   text-decoration: none;
   background-color: transparent;
+  color: black;
 }
 a:hover {
   color: #1d68a7;
@@ -1078,8 +1079,12 @@ pre code {
   }
 
   .col-md-4 {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
+    /* flex: 0 0 33.3333333333%; */
+    /* max-width: 33.3333333333%; */
+    display: block;
+    background-color: #e9ecef;
+    margin-bottom: 20px;
+    border-radius: 0.3rem;
   }
 
   .col-md-5 {
@@ -3986,7 +3991,8 @@ input[type=button].btn-block {
   padding-top: 0.32rem;
   padding-bottom: 0.32rem;
   margin-right: 1rem;
-  font-size: 1.125rem;
+  font-size: 2rem;
+  font-weight: bold;
   line-height: inherit;
   white-space: nowrap;
 }
