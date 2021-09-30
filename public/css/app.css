@@ -1110,6 +1110,17 @@ pre code {
     /* max-width: 66.6666666667%; */
   }
 
+  .col-md-8 button{
+    background-color: #e9ecef;
+    margin-bottom: 20px;
+    border-radius: 2mm;
+  }
+
+  .grid_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%;
