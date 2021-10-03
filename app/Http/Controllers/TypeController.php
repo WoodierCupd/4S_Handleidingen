@@ -14,6 +14,11 @@ class TypeController extends Controller
         $type = Type::findOrFail($type_id);
         $manuals = $type->Manuals()->get();
 
+        foreach($manuals as $manual) {
+            $manual->counter++;
+            $manual->save();
+        }
+
         return view('pages/manual_list', [
             "manuals"=>$manuals,
             "type"=>$type,
