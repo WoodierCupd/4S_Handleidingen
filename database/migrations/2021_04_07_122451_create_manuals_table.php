@@ -19,6 +19,7 @@ class CreateManualsTable extends Migration
             $table->text('originUrl');
             $table->string('filename');
             $table->string('downloadedServer');
+            $table->integer('counter')->default(0);
             $table->timestamps();
         });
     }
